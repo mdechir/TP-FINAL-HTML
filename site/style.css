@@ -1,0 +1,162 @@
+body{
+  background-color: #30475e;
+  color: white;
+  font-family: 'Calibri';
+  margin: 0.5%;
+  font-size: 30px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.flags
+{
+  margin-right: auto;
+  margin-left: auto;
+  width:4vw; 
+  height:4vw;  
+  margin-top: 2vw;
+}
+
+/* Remove scrollbar on Firefox */
+:root { 
+  scrollbar-width: none !important 
+} 
+
+/* Remove scrollbar on Chrome and Edge*/
+body::-webkit-scrollbar { 
+  width: 0 !important
+}
+
+
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color:#66ACAE;
+    border-radius: 15px;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding:0.621vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font: 1.2em "Calibri", sans-serif;
+    font-size: 25px;
+    width: 11.24%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+  border-radius: 15px;
+  background-color: #ffffff77;
+  transition: 0.5s;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+    border-radius: 15px;
+    background-color: #23798e88;
+  }
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 1100px) {
+    .navbar a {
+      float: none;
+      display: block;
+      margin-left: 4vw;
+      width: 88vw;
+      text-align: center; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+
+.container { /* Container holding the image and the text */
+}
+
+.centered { /* Centered text in image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img { /*add resize of image for mobile*/
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Style the table */
+table {
+  border-radius: 15px;
+  overflow: hidden;
+  table-layout:fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* Style table headers and table data */
+th, td {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Center the first child to the left */
+th:first-child, td:first-child {
+  text-align: center;
+}
+
+/* striped table rows */
+tr:nth-child(even) {
+  background-color: #66ACAE
+}
+
+td { /*add break word when the size of screen is limited*/
+  word-wrap: break-word;
+}
+
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
