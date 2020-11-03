@@ -123,7 +123,7 @@ td { /*add break word when the size of screen is limited*/
   word-wrap: break-word;
 }
 
-.audio-container {
+.audio-container { /*Center audio container and adapt to screen size*/
   display: flex;
   justify-content: center;
   align-items: center 
